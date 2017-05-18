@@ -9,6 +9,8 @@ categories: GIT
 description: 
 在阿里云上搭建git服务器，实现本地代码更新到站点目录。（centos）
 ---
+在阿里云上搭建git服务器，实现本地代码更新到站点目录。（centos）
+<!-- more -->
 1. 安装git
 ```
 sudo yum install git    //ubuntu上用apt-get install git。
