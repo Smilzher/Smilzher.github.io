@@ -108,10 +108,10 @@ $ git remote add origin git@xxx.xxx.xxx.xxx:/data/testgit/sample.git
 
 > 参考资料：
 
-- http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000
+- [http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000)
+ 
+- [http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000)
 
-- http://blog.csdn.net/baidu_30000217/article/details/51327289
-
-- http://www.jb51.net/article/98421.htm
+- [http://www.jb51.net/article/98421.htm](http://www.jb51.net/article/98421.htm)
 
 
