@@ -58,11 +58,13 @@ git:x:1001:1001:,,,:/home/git:/bin/bash
 git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
 ```
 - 这样，git用户可以正常通过ssh使用git，但无法登录shell，因为我们为git用户指定的git-shell每次一登录就自动退出。
+
 6.克隆远程仓库：
 - 本地客户端的git bash输入下面命令
 ```
 $ git clone git@server:/data/testgit/sample.git
 ```
+
 7.将代码推送到服务器上
 ```
 git add .
@@ -73,6 +75,7 @@ git push origin master
 ```
 chown -R git:git testgit
 ```
+
 8.实现自动同步到站点目录
 - 自动同步功能用到的是 git 的钩子功能
 - 服务器端：进入裸仓库：/data/testgit/sample.git
@@ -106,7 +109,9 @@ $ git remote add origin git@xxx.xxx.xxx.xxx:/data/testgit/sample.git
 > 参考资料：
 
 - http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000
+
 - http://blog.csdn.net/baidu_30000217/article/details/51327289
+
 - http://www.jb51.net/article/98421.htm
 
 
