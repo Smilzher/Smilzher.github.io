@@ -165,7 +165,3 @@ tinysou_search:     ## http://tinysou.com/
 
 gems:
  - jemoji
- 
-### Theme Color 
-theme_color:
-    theme: '#2ca6cb'    ## the defaut theme color is blue
