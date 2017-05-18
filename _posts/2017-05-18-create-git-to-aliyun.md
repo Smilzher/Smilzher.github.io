@@ -14,11 +14,9 @@ description: 在阿里云上搭建git服务器，实现本地代码更新到站�
 
 <!-- more -->
 1. 安装git
-
 ```
 sudo yum install git    //ubuntu上用apt-get install git。
 ```
-
 2. 创建一个git用户，用来运行git服务
 ```
 sudo adduser git
