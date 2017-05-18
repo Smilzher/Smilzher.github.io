@@ -11,9 +11,7 @@ description: 在阿里云上搭建git服务器，实现本地代码更新到站�
 在阿里云上搭建git服务器，实现本地代码更新到站点目录。（centos）
 
 
-<style>
-<link rel="stylesheet" href="/assets/css/highlight.css" type="text/css" >
-</style>
+
 <!-- more -->
 1. 安装git
 ```
