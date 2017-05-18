@@ -1,4 +1,4 @@
-{% if page.layout == 'post' or page.layout == 'photo' %}
+{% if page.type == 'post' or page.type == 'photo' %}
  {% include _partial/head.html %}
   <body>
     <header>
@@ -14,7 +14,7 @@
     {% include _partial/after_footer.html %}
   </body>
 </html>
-{% elsif page.layout == 'page' %}
+{% elsif page.type == 'page' %}
     {% include _partial/head.html %}
       <body>
         <header>
@@ -27,7 +27,7 @@
         {% include _partial/after_footer.html %}
       </body>
      </html>
-{% elsif page.layout == 'search' %}
+{% elsif page.type == 'search' %}
 {% include _partial/head.html %}
     <body>
       <header>
@@ -40,7 +40,7 @@
       {% include _partial/after_footer.html %}
     </body>
    </html>
-{% elsif page.layout == 'categories' or page.layout == 'tags' or page.layout == 'archives' %}
+{% elsif page.type == 'categories' or page.type == 'tags' or page.type == 'archives' %}
   {% include _partial/head.html %}
     <body>
       <header>

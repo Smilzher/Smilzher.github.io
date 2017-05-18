@@ -35,11 +35,10 @@ $(document).ready(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
   
-  {% if page.layout == 'post' and site.close_aside %}
+  {% if page.type == 'post' && site.close_aside %}
         getSize();
         if (myWidth >= 1024) {
           c.click();
-          $('#toc.toc-aside').show();
         }
   {% endif %}
   
@@ -51,47 +50,17 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
-      {% if page.layout == 'post' and page.toc != false and site.toc.aside %}
+      {% if page.type == 'post' and page.toc != false and site.toc.aside %}
       $('#toc.toc-aside').css('display', 'none');
       {% endif %}
     }
   });
 });
 </script>
-
-{% if site.widgets contains "tagcloud" %}
-<script src="{{ site.assets }}/js/tagcloud.js"></script>
-<script>
-$(document).ready(function() {
-  var tags = [
-    {% for item in site.tags %}
-    { "name": "{{ item[0] }}", "path": "{{ site.baseurl }}/tags/#{{ item[0] }}", "length": {{ item[1] | size }} },
-    {% endfor %}
-  ];
-  $("#tagcloud").html(tagcloudHelper(tags));
-});
-</script>
-{% endif %}
-
-{% if page.layout == 'post' %}
+{% if page.type == 'post' %}
 <script type="text/javascript">
 $(document).ready(function(){ 
-  $('#toc.toc-aside').toc({
-    title: "{{ lang.contents }}",
-    showEffect: "none"
-  });
-  $('#toc.toc-article').toc({
-    title: "{{ lang.contents }}",
-    showEffect: "show",
-    showSpeed: 0
-  });
-});
-</script>
-{% endif %}
-
-{% if page.layout == 'post' %}
-<script type="text/javascript">
-$(document).ready(function(){ 
+  $('.toc-content').toc();
   var ai = $('.article-content>iframe'),
       ae = $('.article-content>embed'),
       t  = $('#toc'),
@@ -117,7 +86,7 @@ $(document).ready(function(){
 </script>
 {% endif %}
 
-{% if (page.layout == 'post' or page.layout == 'page' or page.layout == 'photo') and !site.jiathis.enable  %}
+{% if (page.type == 'post' or page.type == 'page' or page.type == 'photo') and !site.jiathis.enable  %}
 <script type="text/javascript">
 $(document).ready(function(){ 
   var $this = $('.share'),
@@ -212,7 +181,7 @@ var disqus_shortname = '{{ site.disqus_shortname }}';
 {% endif %}
 
 <!--
-{% if page.layout == 'tags' or page.layout == 'categories' %}
+{% if page.type == 'tags' or page.type == 'categories' %}
 <script type="text/javascript">
 $(document).ready(function(){ 
   var list    = $('.archive-title a'),
@@ -233,7 +202,7 @@ $(document).ready(function(){
 {% endif %}
 -->
 
-{% if page.layout == 'archives' or page.layout == 'categories' or page.layout == 'tags' %}
+{% if page.type == 'archives' or page.type == 'categories' or page.type == 'tags' %}
 <script type="text/javascript">
 $(document).ready(function(){
     var show_post = function(anchor) {

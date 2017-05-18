@@ -1,53 +1,16 @@
 # Jekyll-Jacman
 
-**中文 | [English](/README_en.md)**
+Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Jacman](https://github.com/wuchong/jacman) 移植而来。
 
-Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Hexo Jacman](https://github.com/wuchong/jacman) 移植而来。
+[主题演示](http://simpleyyt.github.io/jekyll-jacman/) | [Yitao's Blog](http://simpleyyt.github.io)
 
- * [主题演示](http://simpleyyt.github.io/jekyll-jacman/)
- * [Yitao's Blog](http://simpleyyt.github.io)
- * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman)
-
-##本地搭建
-
-确保已安装`Ruby 2.1.0` 或更高版本：
-
-```sh
-ruby --version
-```
-
-安装`Bundler`：
-
-```sh
-gem install bundler
-```
-
-下载 Jacman 主题：
-
-```sh
-git clone https://github.com/Simpleyyt/jekyll-jacman.git
-cd jekyll-jacman
-```
-
-安装依赖：
-
-```sh
-bundle install
-```
-
-运行 Jekyll：
-
-```sh
-bundle exec jekyll server
-```
-
-更多细节可以参考：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+[如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman/)
 
 ##功能
 - **菜单 menu**  
  主导航菜单
 - **控件 widget**  
- 侧边栏的控件。包括：Github 名片	、分类、标签、RSS、友情链接、微博秀。
+ 侧边栏的控件。包括：分类、标签、RSS、友情链接、微博秀。
 - **图片相关 Image**  
  设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等。
 - **首页模式 index**  
@@ -70,17 +33,10 @@ bundle exec jekyll server
  RSS 订阅链接。
 - **fancybox**  
  图片查看的 [Fancybox](http://fancyapps.com/fancybox/) 工具。
+- **自定义主题颜色**
+ 在`_config.yaml`中就可以修改主题的颜色，而不用去找那些奇怪的 stylus 文件。
 - **其他**
  你可以设置侧边栏在博文页面中不显示。
 
-##关于 Kramdown 引擎
-由于 Github 不再支持原来的 redcarpet，因此每次更新时都会有 Page build warning 发到邮件。我新建了一个分支 kramdown，把 Markdown 引擎换成了 kramdown，把高亮换成了 rough。但是，kramdown 的 markdown 语法比较严格，我不喜欢。所以，你也可以像我一样建个规则过滤 Page build warning 邮件。
-
 ##协议
 [MIT](/LICENSE)
-
-##捐赠
-
-支付宝捐赠链接还是要有的，万一真的有人捐呢。
-
-![支付宝扫码捐赠](http://p1.bpimg.com/567571/9a4a158daee8aa69.png)
