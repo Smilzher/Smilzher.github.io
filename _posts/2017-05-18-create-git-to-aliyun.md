@@ -66,12 +66,12 @@ $ git clone git@server:/data/testgit/sample.git
 ```
 
 7.将代码推送到服务器上
-- aa
 ```
 git add .
 git commit -am "test commit"
 git push origin master
 ```
+
 - 如果在这里推送失败了，极有可能是因为服务器的权限问题,解决方法，修改testgit权限。
 ```
 chown -R git:git testgit
