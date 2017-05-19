@@ -66,7 +66,7 @@ $ git clone git@server:/data/testgit/sample.git
 ```
 
 7.将代码推送到服务器上
-- 
+- aa
 ```
 git add .
 git commit -am "test commit"
